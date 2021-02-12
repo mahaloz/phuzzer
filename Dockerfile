@@ -55,7 +55,7 @@ RUN cd /phuzzers/ && \
     cd AFLplusplus && \
     apt install build-essential libtool-bin python3-dev automake flex bison ipython3 \
     libglib2.0-dev libpixman-1-dev clang python3-setuptools llvm -y && \
-    LLVM_CONFIG=llvm-config-11 make distrib && \
+    LLVM_CONFIG=llvm-config-11 make source-only && \
     make install -j 8
 
 # Install the phuzzer framework 
